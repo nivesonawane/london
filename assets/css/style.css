@@ -60,7 +60,7 @@
     position: relative;
  }
 
- .overlay-img {
+.overlay-img{
     width: 100%;
     height: 100vh;
     background-image: url('../img/headerImg.jpg');
@@ -69,17 +69,7 @@
     background-position: center;
     background-size: cover;
     object-fit: cover;
-}
-
-.overlay-img::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.5);
-}
+} 
 
 .overlay-content{
     position: absolute;
@@ -102,19 +92,9 @@
 
 .heroImg .overlay-title h1{
     padding-bottom: 4px;  
-    position: relative;
+    
 }
 
-.heroImg .overlay-title h1::after{
-  content: '';
-  height: 2px;
-  width: 25%;
-  background-color: #fff;
-  position: absolute;
-  left: 500px;
-  bottom: 0;
-  
-}
 
 /* ######################### about section start ################################### */
 .about{
@@ -195,9 +175,9 @@
 }
 
 .view .button1:hover,.view .button1:active,.view .button1:focus{
-    color: var(--text-color-primary);
-    background-color: var(--color-white);
-	animation: btnAnimate 2s ease-in 2;
+    /* color: var(--text-color-primary);
+    background-color: var(--color-white); */
+    animation: btnAnimate 2s ease-in 2;
 }
 
 @keyframes btnAnimate{
@@ -240,11 +220,14 @@
     padding: 5px;
     border: 2px solid var(--color-white);
     border-radius: 50%;
-    transition: all .2s ease-in-out;
 }
+
 .social-icons li>a>i:hover{
   transform: translateY(-20px) rotate(360deg);
 }
+
+
+
 
 @media all and (max-width: 600px){
     .london-navbar .navbar-nav>li>a:hover::after{
@@ -285,7 +268,6 @@
         margin-top: 70px;
         object-fit: cover;
     }
-   
     
 }
 
